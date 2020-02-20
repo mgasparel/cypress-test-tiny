@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <script type="text/javascript">
+    function reqListener () {
+      console.log(this);
+    }
+
+    var oReq = new XMLHttpRequest();
+    oReq.addEventListener("load", reqListener);
+    oReq.open("PUT", "https://nocontentexample.azurewebsites.net/api/HttpTrigger1?code=P9h9uOLUo5EelWZX2B4A6TaVBEeyDAoIvwNlxqP1kIVQUba3qXPi9w==");
+    oReq.send();
+  </script>
+</head>
+<body>
+
+</body>
+</html>
